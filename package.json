@@ -1,0 +1,39 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest  --coverage --verbose",
+    "lint": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad-Eshtaiwi/authentication.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammad-Eshtaiwi/authentication/issues"
+  },
+  "homepage": "https://github.com/Mohammad-Eshtaiwi/authentication#readme",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.10"
+  },
+  "devDependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
+    "eslint": "^7.12.0",
+    "jest": "^26.6.1",
+    "supertest": "^5.0.0"
+  }
+}
