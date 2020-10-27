@@ -18,12 +18,13 @@ describe('signin/up', () => {
     results = await mockRequest.post(`/signin`).auth('moha', '123');
     expect(results.status).toBe(500);
   });
-  it('should signin if user not exitis', async () => {
+  it('should signup if user not exitis', async () => {
     obj = {
-      username: 'jojo',
+      username: 'max',
       password: '1234',
     };
     let results = await mockRequest.post('/signup').send(obj);
+    console.log('__results.body___', results.body);
     console.log('__results__', results.status);
     expect(results.status).toBe(200);
   });
