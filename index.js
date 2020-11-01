@@ -7,4 +7,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/auth', {
   useUnifiedTopology: true,
 });
 
-server.start(3000);
+server.start(3000).catch(err => {
+  console.error(err.message);
+});
