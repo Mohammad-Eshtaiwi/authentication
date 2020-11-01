@@ -8,7 +8,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    server.start(3000);
+    server.start();
   })
   .catch(err => {
     console.error(err.message);
