@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const server = require('./lib/server');
 
-mongoose.connect('mongodb://localhost/auth', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/auth', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
