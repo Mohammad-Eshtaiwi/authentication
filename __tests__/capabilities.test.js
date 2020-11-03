@@ -20,6 +20,7 @@ async function update(results) {
 }
 
 async function remove(results) {
+  let hi;
   return await mockRequest
     .delete('/secret/remove')
     .set('Authorization', 'bearer ' + results.body.token);
